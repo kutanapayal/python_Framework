@@ -1,0 +1,16 @@
+---> The jinja2 template engine uses the following delimiters for escaping from HTML.
+
+{% ... %} for Statements
+{{ ... }} for Expressions to print to the template output
+{# ... #} for Comments not included in the template output
+# ... ## for Line Statements
+
+----> Flask.redirect(location, statuscode, response)
+
+In the above function −
+
+location parameter is the URL where response should be redirected.
+
+statuscode sent to browser’s header, defaults to 302.
+
+response parameter is used to instantiate response.
