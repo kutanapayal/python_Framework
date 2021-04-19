@@ -1,0 +1,28 @@
+reference ---> https://www.tutorialspoint.com/django/django_environment.htm
+
+--->install django
+pip install Django==3.2
+
+---> check django installation
+ django-admin.py --version
+
+---> create project
+django-admin startproject myproject
+
+---> create application inside (ex contact page)
+python manage.py startapp myapp
+add 'myapp' inside settings Application definition
+
+---> Django - Admin Interface
+Before launching your server, to access your Admin Interface, you need to initiate the database 
+python manage.py migrate
+
+If you already have a superuser or have forgotten it, you can always create one using the following code 
+python manage.py createsuperuser
+
+include below line in urls.py file
+url(r'^admin/', include(admin.site.urls)),
+
+python manage.py runserver
+http://127.0.0.1:8000/admin/
+
